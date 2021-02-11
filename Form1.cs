@@ -46,7 +46,7 @@ namespace RGBApp
             int blue = (int)NumericBlue.Value;
 
             RedBox.BackColor = Color.FromArgb(red, 0, 0);
-            ColorBox.BackColor = Color.FromArgb(red, green, blue);
+            this.BackColor = Color.FromArgb(red, green, blue);
         }
 
         private void NumericGreen_ValueChanged(object sender, EventArgs e)
@@ -56,7 +56,7 @@ namespace RGBApp
             int blue = (int)NumericBlue.Value;
 
             GreenBox.BackColor = Color.FromArgb(0, green, 0);
-            ColorBox.BackColor = Color.FromArgb(red, green, blue);
+            this.BackColor = Color.FromArgb(red, green, blue);
         }
 
         private void NumericBlue_ValueChanged(object sender, EventArgs e)
@@ -66,7 +66,7 @@ namespace RGBApp
             int blue = (int)NumericBlue.Value;
 
             BlueBox.BackColor = Color.FromArgb(0, 0, blue);
-            ColorBox.BackColor = Color.FromArgb(red, green, blue);
+            this.BackColor = Color.FromArgb(red, green, blue);
         }
     }
 }
