@@ -47,9 +47,9 @@
             // ColorBox
             // 
             this.ColorBox.BackColor = System.Drawing.Color.Red;
-            this.ColorBox.Location = new System.Drawing.Point(878, 291);
+            this.ColorBox.Location = new System.Drawing.Point(774, 104);
             this.ColorBox.Name = "ColorBox";
-            this.ColorBox.Size = new System.Drawing.Size(264, 240);
+            this.ColorBox.Size = new System.Drawing.Size(209, 193);
             this.ColorBox.TabIndex = 0;
             this.ColorBox.TabStop = false;
             this.ColorBox.Click += new System.EventHandler(this.ColorBox_Click);

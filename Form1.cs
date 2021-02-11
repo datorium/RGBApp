@@ -42,19 +42,31 @@ namespace RGBApp
         {
             //pixel bulb can have value between 0-255
             int red = (int)NumericRed.Value;
+            int green = (int)NumericGreen.Value;
+            int blue = (int)NumericBlue.Value;
+
             RedBox.BackColor = Color.FromArgb(red, 0, 0);
+            ColorBox.BackColor = Color.FromArgb(red, green, blue);
         }
 
         private void NumericGreen_ValueChanged(object sender, EventArgs e)
         {
+            int red = (int)NumericRed.Value;
             int green = (int)NumericGreen.Value;
+            int blue = (int)NumericBlue.Value;
+
             GreenBox.BackColor = Color.FromArgb(0, green, 0);
+            ColorBox.BackColor = Color.FromArgb(red, green, blue);
         }
 
         private void NumericBlue_ValueChanged(object sender, EventArgs e)
         {
+            int red = (int)NumericRed.Value;
+            int green = (int)NumericGreen.Value;
             int blue = (int)NumericBlue.Value;
+
             BlueBox.BackColor = Color.FromArgb(0, 0, blue);
+            ColorBox.BackColor = Color.FromArgb(red, green, blue);
         }
     }
 }
