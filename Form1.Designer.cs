@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ColorBox = new System.Windows.Forms.PictureBox();
             this.RedBox = new System.Windows.Forms.PictureBox();
             this.NumericRed = new System.Windows.Forms.NumericUpDown();
@@ -190,8 +191,9 @@
             this.Controls.Add(this.NumericRed);
             this.Controls.Add(this.RedBox);
             this.Controls.Add(this.ColorBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Datorium Color Mixer";
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericRed)).EndInit();
