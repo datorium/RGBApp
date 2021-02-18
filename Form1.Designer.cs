@@ -35,6 +35,7 @@
             this.BlueBox = new System.Windows.Forms.PictureBox();
             this.NumericGreen = new System.Windows.Forms.NumericUpDown();
             this.NumericBlue = new System.Windows.Forms.NumericUpDown();
+            this.RandomColorButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericRed)).BeginInit();
@@ -125,11 +126,23 @@
             this.NumericBlue.TabIndex = 6;
             this.NumericBlue.ValueChanged += new System.EventHandler(this.NumericBlue_ValueChanged);
             // 
+            // RandomColorButton
+            // 
+            this.RandomColorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.RandomColorButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RandomColorButton.Location = new System.Drawing.Point(49, 324);
+            this.RandomColorButton.Name = "RandomColorButton";
+            this.RandomColorButton.Size = new System.Drawing.Size(678, 70);
+            this.RandomColorButton.TabIndex = 7;
+            this.RandomColorButton.Text = "Random Color";
+            this.RandomColorButton.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1170, 556);
+            this.ClientSize = new System.Drawing.Size(1014, 464);
+            this.Controls.Add(this.RandomColorButton);
             this.Controls.Add(this.NumericBlue);
             this.Controls.Add(this.NumericGreen);
             this.Controls.Add(this.BlueBox);
@@ -159,6 +172,7 @@
         private System.Windows.Forms.PictureBox BlueBox;
         private System.Windows.Forms.NumericUpDown NumericGreen;
         private System.Windows.Forms.NumericUpDown NumericBlue;
+        private System.Windows.Forms.Button RandomColorButton;
     }
 }
 
