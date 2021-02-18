@@ -36,6 +36,9 @@
             this.NumericGreen = new System.Windows.Forms.NumericUpDown();
             this.NumericBlue = new System.Windows.Forms.NumericUpDown();
             this.RandomColorButton = new System.Windows.Forms.Button();
+            this.RedSlider = new System.Windows.Forms.TrackBar();
+            this.GreenSlider = new System.Windows.Forms.TrackBar();
+            this.BlueSlider = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RedBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericRed)).BeginInit();
@@ -43,6 +46,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.BlueBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericGreen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericBlue)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RedSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GreenSlider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BlueSlider)).BeginInit();
             this.SuspendLayout();
             // 
             // ColorBox
@@ -136,12 +142,46 @@
             this.RandomColorButton.TabIndex = 7;
             this.RandomColorButton.Text = "Random Color";
             this.RandomColorButton.UseVisualStyleBackColor = true;
+            this.RandomColorButton.Click += new System.EventHandler(this.RandomColorButton_Click);
+            // 
+            // RedSlider
+            // 
+            this.RedSlider.Location = new System.Drawing.Point(49, 410);
+            this.RedSlider.Maximum = 255;
+            this.RedSlider.Name = "RedSlider";
+            this.RedSlider.Size = new System.Drawing.Size(678, 56);
+            this.RedSlider.TabIndex = 8;
+            this.RedSlider.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.RedSlider.Scroll += new System.EventHandler(this.RedSlider_Scroll);
+            // 
+            // GreenSlider
+            // 
+            this.GreenSlider.Location = new System.Drawing.Point(49, 453);
+            this.GreenSlider.Maximum = 255;
+            this.GreenSlider.Name = "GreenSlider";
+            this.GreenSlider.Size = new System.Drawing.Size(678, 56);
+            this.GreenSlider.TabIndex = 9;
+            this.GreenSlider.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.GreenSlider.Scroll += new System.EventHandler(this.GreenSlider_Scroll);
+            // 
+            // BlueSlider
+            // 
+            this.BlueSlider.Location = new System.Drawing.Point(49, 498);
+            this.BlueSlider.Maximum = 255;
+            this.BlueSlider.Name = "BlueSlider";
+            this.BlueSlider.Size = new System.Drawing.Size(678, 56);
+            this.BlueSlider.TabIndex = 10;
+            this.BlueSlider.TickStyle = System.Windows.Forms.TickStyle.None;
+            this.BlueSlider.Scroll += new System.EventHandler(this.BlueSlider_Scroll);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1014, 464);
+            this.ClientSize = new System.Drawing.Size(1014, 557);
+            this.Controls.Add(this.BlueSlider);
+            this.Controls.Add(this.GreenSlider);
+            this.Controls.Add(this.RedSlider);
             this.Controls.Add(this.RandomColorButton);
             this.Controls.Add(this.NumericBlue);
             this.Controls.Add(this.NumericGreen);
@@ -159,7 +199,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.BlueBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericGreen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NumericBlue)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RedSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.GreenSlider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BlueSlider)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -173,6 +217,9 @@
         private System.Windows.Forms.NumericUpDown NumericGreen;
         private System.Windows.Forms.NumericUpDown NumericBlue;
         private System.Windows.Forms.Button RandomColorButton;
+        private System.Windows.Forms.TrackBar RedSlider;
+        private System.Windows.Forms.TrackBar GreenSlider;
+        private System.Windows.Forms.TrackBar BlueSlider;
     }
 }
 

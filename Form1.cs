@@ -47,6 +47,7 @@ namespace RGBApp
 
             RedBox.BackColor = Color.FromArgb(red, 0, 0);
             this.BackColor = Color.FromArgb(red, green, blue);
+            RedSlider.Value = (int)NumericRed.Value;
         }
 
         private void NumericGreen_ValueChanged(object sender, EventArgs e)
@@ -57,6 +58,7 @@ namespace RGBApp
 
             GreenBox.BackColor = Color.FromArgb(0, green, 0);
             this.BackColor = Color.FromArgb(red, green, blue);
+            GreenSlider.Value = (int)NumericGreen.Value;
         }
 
         private void NumericBlue_ValueChanged(object sender, EventArgs e)
@@ -67,6 +69,33 @@ namespace RGBApp
 
             BlueBox.BackColor = Color.FromArgb(0, 0, blue);
             this.BackColor = Color.FromArgb(red, green, blue);
+            BlueSlider.Value = (int)NumericBlue.Value;
+        }
+
+        private void RandomColorButton_Click(object sender, EventArgs e)
+        {
+            int red = rand.Next(0, 256);
+            int green = rand.Next(0, 256);
+            int blue = rand.Next(0, 256);
+
+            NumericRed.Value = red;
+            NumericGreen.Value = green;
+            NumericBlue.Value = blue;
+        }
+
+        private void RedSlider_Scroll(object sender, EventArgs e)
+        {
+            NumericRed.Value = RedSlider.Value;
+        }
+
+        private void GreenSlider_Scroll(object sender, EventArgs e)
+        {
+            NumericGreen.Value = GreenSlider.Value;
+        }
+
+        private void BlueSlider_Scroll(object sender, EventArgs e)
+        {
+            NumericBlue.Value = BlueSlider.Value;
         }
     }
 }
